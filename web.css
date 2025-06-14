@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color:rgba(83, 71, 71, 0.14);
+  color: #ada2a2;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: #3d80c9;
+  padding: 20px 0;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav {
+  float: right;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x500') no-repeat center/cover;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.services, .about, .testimonials, .contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-box, .testimonial {
+  margin-bottom: 30px;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: rgba(48, 46, 46, 0.459);
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
